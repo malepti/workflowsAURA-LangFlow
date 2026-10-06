@@ -1,0 +1,22 @@
+{
+  "buildCommand": "cd src/frontend && npm run build",
+  "outputDirectory": "src/frontend/build",
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://workflowsaura-app.onrender.com/api/$1"
+    },
+    {
+      "source": "/health",
+      "destination": "https://workflowsaura-app.onrender.com/health"
+    },
+    {
+      "source": "/health_check",
+      "destination": "https://workflowsaura-app.onrender.com/health_check"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
