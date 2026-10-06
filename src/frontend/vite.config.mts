@@ -49,7 +49,7 @@ export default defineConfig(({ mode }) => {
         envLangflow.ACCESS_TOKEN_EXPIRE_SECONDS,
       ),
       "import.meta.env.BACKEND_URL": JSON.stringify(
-        envLangflow.BACKEND_URL ?? "http://localhost:7860",
+        envLangflow.BACKEND_URL ?? "https://workflowsaura-app.onrender.com",
       ),
       "import.meta.env.CI": JSON.stringify(envLangflow.CI ?? false),
       __LANGFLOW_AUTO_LOGIN__: JSON.stringify(
